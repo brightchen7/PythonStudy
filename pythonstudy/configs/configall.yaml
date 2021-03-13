@@ -1,0 +1,45 @@
+---
+name: &name Gakki
+wife: *name
+---
+# yaml键值对：即python中字典
+usr: my
+psw: 123455
+s: " abc\n"
+---
+# yaml键值对嵌套：即python中字典嵌套字典
+usr1:
+  name: a
+  psw: 123
+usr2:
+  name: b
+  psw: 456
+---
+# yaml键值对中嵌套数组
+usr3:
+  - a
+  - b
+  - c
+usr4:
+  - b
+---
+# yaml数组
+- a
+- b
+- 5
+---
+# yaml"数组"中嵌套"键值对"
+- usr1: aaa
+- psw1: 111
+  usr2: bbb
+  psw2: 222
+---
+# 纯量
+s_val: name              # 字符串：{'s_val': 'name'}
+spec_s_val: "name\n"    # 特殊字符串：{'spec_s_val': 'name\n'
+num_val: 31.14          # 数字：{'num_val': 31.14}
+bol_val: true           # 布尔值：{'bol_val': True}
+nul_val: null           # null值：{'nul_val': None}
+nul_val1: ~             # null值：{'nul_val1': None}
+time_val: 2018-03-01t11:33:22.55-06:00     # 时间值：{'time_val': datetime.datetime(2018, 3, 1, 17, 33, 22, 550000)}
+date_val: 2019-01-10    # 日期值：{'date_val': datetime.date(2019, 1, 10)}

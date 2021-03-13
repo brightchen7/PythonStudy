@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+arrow = "==0.16.0"
+loguru = "==0.4.1"
+peewee = "==3.13.3"
+pyyaml = "==5.3.1"
+pandas = "*"
+lxml = "==4.5.1"
+beautifulsoup4 = "*"
+requests = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
