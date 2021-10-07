@@ -13,6 +13,7 @@ lxml = "==4.5.1"
 beautifulsoup4 = "*"
 requests = "*"
 pylint = "*"
+apscheduler = "*"
 
 [dev-packages]
 
