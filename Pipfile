@@ -4,12 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-arrow = "==0.16.0"
-loguru = "==0.4.1"
-peewee = "==3.13.3"
-pyyaml = "==5.3.1"
+arrow = "*"
+loguru = "*"
+peewee = "*"
+pyyaml = "*"
 pandas = "*"
-lxml = "==4.5.1"
+lxml = "*"
 beautifulsoup4 = "*"
 requests = "*"
 pylint = "*"
