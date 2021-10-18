@@ -9,8 +9,8 @@
 --------------------------------
 '''
 
-from loguru import logger
 import sys
+from loguru import logger
 
 logger.debug("That's it, beautiful and simple logging!")
 one = logger.add(sys.stderr, format="{time} {level} {message}", level="INFO")
@@ -18,9 +18,15 @@ logger.info("test new add!")
 logger.remove(one)
 
 logger.add("./log/file_{time:YYYYMMDD}.log", rotation="5 MB")
-logger.info("If you're using Python {}, prefer {feature} of course!", 3.6, feature="f-strings")
+logger.info(
+    "If you're using Python {}, prefer {feature} of course!",
+    3.6,
+    feature="f-strings")
 
-logger.add(sys.stdout, colorize=True, format="<green>%{file}</green><r>{name}:{module}:{line}</r> <level>{message}</level>")
+logger.add(
+    sys.stdout,
+    colorize=True,
+    format="<green>%{file}</green><r>{name}:{module}:{line}</r> <level>{message}</level>")
 logger.info("test color")
 
 # @logger.catch

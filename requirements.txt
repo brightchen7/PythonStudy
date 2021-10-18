@@ -1,8 +1,0 @@
-arrow
-loguru
-peewee
-pyyaml
-pandas
-lxml
-beautifulsoup4
-requests
