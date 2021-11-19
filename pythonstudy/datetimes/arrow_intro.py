@@ -24,9 +24,9 @@ time_stamp = arrow.now().format()
 print(time_stamp)
 # 把字符串时间，datetime对象或时间戳转换成arrow对象
 time_stamp = arrow.get(1578039096).to('local')
-time_stamp2 = arrow.get("2020-01-03 16:11:36")
+TIME_STAMP_STR = arrow.get("2020-01-03 16:11:36")
 print(time_stamp.format("YYYY-MM-DD HH:mm:ss"))
-print(time_stamp2.format("YYYY-MM-DD HH:mm:ss"))
+print(TIME_STAMP_STR.format("YYYY-MM-DD HH:mm:ss"))
 # 替换，加减时间
 arw = arrow.utcnow()
 print(arw)
