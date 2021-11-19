@@ -18,13 +18,21 @@ def basic_example():
 
     p = Path(r'D:\CodeRepo\Github\PythonStudy')
     q = p / 'pythonstudy'
+    print(f'{q.absolute().name}, type{type(q.name)}')
     q = q.joinpath('buildin_function')
+    print(p.exists())
     print(q)
     print(q.exists())
-    print([x for x in p.iterdir() if x.is_file()])
+    if p.exists():
+        print([x for x in p.iterdir() if x.is_file()])
+    else:
+        print(f"no path for {p.name}")
     q = q / "path_study.py"
-    with q.open() as f:
-        print(f.readline())
+    if q.exists():
+        with q.open() as f:
+            print(f.readline())
+    else:
+        print(f'no file for {q.name}')
 
 
 def read_msg(path_txt):
