@@ -60,6 +60,10 @@ def rename_case(your_path):
                 new_name = ".".join(names[3:])
                 print(f"{movie_file.name} -> {new_name}")
                 movie_file.replace(movie_file.with_name(new_name))
+            elif "电影天堂" in names[0]:
+                new_name = ".".join(names[2:])
+                print(f"{movie_file.name} -> {new_name}")
+                movie_file.replace(movie_file.with_name(new_name))
 
 
 if __name__ == "__main__":
