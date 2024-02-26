@@ -1,7 +1,10 @@
 #!/usr/bin/env python
+# coding=utf-8
+
 """A simple cmd2 application."""
 import cmd2
 import argparse
+from big_title import big_letter
 
 class FirstApp(cmd2.Cmd):
     """A simple cmd2 application."""
@@ -12,6 +15,7 @@ class FirstApp(cmd2.Cmd):
         super().__init__(multiline_commands=['orate'], shortcuts=shortcuts)
 
         # Make maxrepeats settable at runtime
+        self.intro = big_letter
         self.maxrepeats = 3
         self.add_settable(cmd2.Settable('maxrepeats', int, 'max repetitions for speak command', self))
 
