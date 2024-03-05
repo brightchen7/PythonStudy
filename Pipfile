@@ -14,11 +14,15 @@ beautifulsoup4 = "*"
 requests = "*"
 apscheduler = "*"
 blinker = "*"
+h5py = "*"
+pysocks = "*"
+black = "*"
 cmd2 = "*"
+cx-oracle = "*"
 
 [dev-packages]
 pylint = "*"
 black = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
